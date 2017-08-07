@@ -6,12 +6,21 @@
   display: flex;
 }
 
+.header h3{
+  color: MediumAquamarine;
+  padding-left: 10px;
+}
+
+nav {
+}
+
 #navbar{
   list-style-type: none;
 }
 
 .fstnav{
   display: inline-block;
+  justify-content: flex-end;
 }
 
 .fstnav a{
