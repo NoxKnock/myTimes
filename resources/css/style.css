@@ -1,6 +1,7 @@
 
 
 .header{
+  width: 100%;
   border-bottom: 1px solid black;
-  
+  list-style-type: none;
 }
