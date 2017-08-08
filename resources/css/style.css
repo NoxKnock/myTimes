@@ -1,5 +1,7 @@
 
 
+
+/*
 .header{
   width: 100%;
   border-bottom: 1px solid black;
@@ -14,13 +16,8 @@
 nav {
 }
 
-#navbar{
-  list-style-type: none;
-}
-
 .fstnav{
   display: inline-block;
-  justify-content: flex-end;
 }
 
 .fstnav a{
@@ -29,3 +26,4 @@ nav {
   font-size: 14px;
   font-weight: bold;
 }
+*/
