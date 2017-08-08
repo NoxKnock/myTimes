@@ -3,12 +3,18 @@
 Not sure why we put in a flex property in both. But I believe its becuase we actually have two parent "divs" below. One
 in the header and one in the .headerL*/
 
+body{
+  margin: 0;
+  display: block;
+
+}
+
 header{
  display: flex;
  border-bottom: 1px solid black;
  position: fixed;
  width: 100%;
- /*
+ /* need to add this later.
  height: 80%;
  */
  z-index: 1;
@@ -42,32 +48,34 @@ a{
   color: black;
 }
 
+div {
+  display: block;
+  border: 1px solid black;
+}
 
-
-
-/*
-.header{
-  width: 100%;
-  border-bottom: 1px solid black;
+.maincontainer{
   display: flex;
+  width: 1232px;
+  padding-top: 116px;
+  margin: 0 auto 78px auto;
 }
 
-.header h3{
-  color: MediumAquamarine;
-  padding-left: 10px;
+/*this is the parent of the items large, medium, small*/
+.column{
+  display: flex;
+  flex-direction: column; /*creating a news site, need columns*/
+  margin-right: 32px;
 }
 
-nav {
+
+.column.large {
+  width: 630px;
 }
 
-.fstnav{
-  display: inline-block;
+.column.medium{
+  width: 300px;
 }
 
-.fstnav a{
-  color: black;
-  font-family: verdana;
-  font-size: 14px;
-  font-weight: bold;
+.column.small {
+  width: 240px;
 }
-*/
