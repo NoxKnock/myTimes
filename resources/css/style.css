@@ -72,14 +72,33 @@ div {
   width: 630px;
 }
 
-
 .picmain{
-  background-image: url("./resources/images/img-story-main.png");
+  background-image: url("../images/img-story-main.png");
   width: 630px;
   margin-top: 0;
   font-size: 40px;
   text-align: left;
 }
+
+.picsone{
+  background-image: url("../images/img-story-2.png");
+}
+
+.pictwo{
+  background-image: url("../images/img-story-3.png");
+}
+
+.imgcontent{
+  height: 300px;
+  margin-top: 15px;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: White;
+  text-align: center;
+}
+
+
 
 .column.medium{
   width: 300px;
