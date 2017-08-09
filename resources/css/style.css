@@ -50,7 +50,6 @@ a{
 
 div {
   display: block;
-  border: 1px solid black;
 }
 
 .maincontainer{
@@ -89,10 +88,12 @@ div {
 
 .picsone{
   background-image: url("../images/img-story-2.png");
+  background-repeat: no-repeat;
 }
 
 .pictwo{
   background-image: url("../images/img-story-3.png");
+  background-repeat: no-repeat;
 }
 
 /*the below part is the main content for all headers on the picutres, this is a smart and simple way to control it*/
@@ -106,6 +107,28 @@ div {
   text-align: center;
 }
 
+/*Paragraph styling*/
+.text{
+  display: block;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/*Flex-containers coding for the two sub-main stroies*/
+
+.stories{
+  display: flex;
+  justify-content: space-between;
+}
+
+.story{
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+
 .column.medium{
   width: 300px;
 }
@@ -116,11 +139,4 @@ div {
 
 .column.small {
   width: 240px;
-}
-
-.text{
-  display: block;
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
 }
