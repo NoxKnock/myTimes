@@ -67,7 +67,6 @@ div {
   margin-right: 32px;
 }
 
-
 .column.large {
   width: 630px;
 }
@@ -80,6 +79,14 @@ div {
   text-align: left;
 }
 
+.maincontent{
+  color: white;
+  font-weight: bold;
+  font-family: Georgia;
+  height: 300px;
+
+}
+
 .picsone{
   background-image: url("../images/img-story-2.png");
 }
@@ -88,6 +95,7 @@ div {
   background-image: url("../images/img-story-3.png");
 }
 
+/*the below part is the main content for all headers on the picutres, this is a smart and simple way to control it*/
 .imgcontent{
   height: 300px;
   margin-top: 15px;
@@ -98,12 +106,21 @@ div {
   text-align: center;
 }
 
-
-
 .column.medium{
   width: 300px;
 }
 
+.picsmallstory{
+  background-image: url("../images/img-story-1.png");
+}
+
 .column.small {
   width: 240px;
+}
+
+.text{
+  display: block;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
