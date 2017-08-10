@@ -1,26 +1,22 @@
 
-/*This is the main header, alot of the code is put in here, it defines the navigation bar in this case.
-Not sure why we put in a flex property in both. But I believe its becuase we actually have two parent "divs" below. One
-in the header and one in the .headerL*/
-
 body{
   margin: 0;
   display: block;
-
 }
 
+
+/*header start, including the navigation bar and MY times column*/
 header{
  display: flex;
  border-bottom: 1px solid black;
  position: fixed;
  width: 100%;
- /* need to add this later.
- height: 80%;
- */
- z-index: 1;
+ /* need to add this later.height: 80%;*/
+ z-index: 10;
  font-family: Verdana;
  font-size: 14px;
  font-weight: bold;
+ background-color: white;
 }
 
 .headerL{
@@ -48,10 +44,21 @@ a{
   color: black;
 }
 
+/* Header end including navigation bar */
+
 div {
   display: block;
 }
 
+/*Paragraph styling for all columns expect the smallest one*/
+.text{
+  display: block;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/* Maincontainer for all columns*/
 .maincontainer{
   display: flex;
   width: 1232px;
@@ -66,6 +73,7 @@ div {
   margin-right: 32px;
 }
 
+/*Large column, indcluding three stories*/
 .column.large {
   width: 630px;
 }
@@ -107,19 +115,12 @@ div {
   text-align: center;
 }
 
-/*Paragraph styling*/
-.text{
-  display: block;
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
 /*Flex-containers coding for the two sub-main stroies*/
 
 .stories{
   display: flex;
   justify-content: space-between;
+  margin-top: 17px;
 }
 
 .story{
@@ -128,7 +129,13 @@ div {
   width: 300px;
 }
 
+.text-para{
+  height: 250px;
+}
 
+/*End of large column*/
+
+/* Medium column, the middle one, not alot of coding needed here, using code from the large column code for the Cat story*/
 .column.medium{
   width: 300px;
 }
@@ -137,6 +144,26 @@ div {
   background-image: url("../images/img-story-1.png");
 }
 
+/*End of medium column*/
+
 .column.small {
   width: 240px;
+}
+
+.newsbites h3{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsbites .list-cat{
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
 }
